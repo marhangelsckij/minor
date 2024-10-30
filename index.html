@@ -1,0 +1,180 @@
+<html>
+<head>
+    <meta charset="utf8">
+    <title>DOM_JS. Считываем информацию из DOM</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@100;200;300;400;500;600;700&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=PT+Sans+Caption:wght@400;700&family=Poiret+One&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="./images/icon.jpg"/>
+    <style>
+       
+        body {
+  margin: 0;
+  padding: 0;
+  background: #ccc;
+  
+}
+ 
+.nav ul {
+  list-style: none;
+  background-color: #c22e2e;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.nav li {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #888;
+}
+ 
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: .3s background-color;
+}
+ 
+.nav a:hover {
+  background-color: #333baf;
+}
+ 
+.nav a.active {
+  background-color: #fff;
+  color: #444;
+  cursor: default;
+}
+ 
+@media screen and (min-width: 600px) {
+  .nav li {
+    width: 300px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+  }
+ 
+
+  .nav li {
+    display: inline-block;
+    margin-right: -4px;
+  }
+ 
+}
+
+        body {
+            background: linear-gradient(to right,  rgb(65, 116, 211), white, red);
+            width: 99%;
+            height: 100%
+        }
+
+        #hi {
+            position: absolute;
+            left: 850px;
+            top: 350px;
+        }
+
+        .frame {
+            border: 3px solid #00a8e1;
+        }
+
+        #ourt {
+          margin-left: 40px;
+        }
+
+        #threet {
+          margin-left: 40px;
+          margin-bottom: 40px;
+        }
+
+        #lat {
+            margin-left: 680px;
+            position: absolute;
+        }
+
+        #screensh {
+          margin-top: -60%;
+          margin-left: 45%;
+        }
+</style>
+
+</head>
+<body>
+    <header>
+        <div class="nav">
+          <ul>
+            <li class="home"><a href="inf.html"><font face="Fantasy">Главная</font></a></li>
+            <li class="tutorials"><a href="teachers.html"><font face="Fantasy">Преподаватели</font></a></li>
+            <li class="about"><a href="education.html"><font face="Fantasy">Образование</font></a></li>
+            <li class="news"><a href="place.html"><font face="Fantasy">Местоположение</font></a></li>
+            <li class="passport"><a class="active" href="index.html"><font face="Fantasy">Паспорт</font></a></li>
+            <li class="passport"><a href="change_to_latin.html"><font face="Fantasy">Паспорт 2</font></a></li>
+            <li class="task"><a href="tasktrain/main.html"><font face="Fantasy">Задача</font></a></li>
+            <li class="task"><a href="tasktrain2/main2.html"><font face="Fantasy">Задача 2</font></a></li>
+          </ul>
+        </div>
+      </header>
+    <br>
+    <br>
+    <h1 id="strel">Паспорт</h1>
+    <br>
+    <br>
+    
+    <div id="main_fon">
+
+        <h5 id="pass_title" class="poiret-one-regular">РОССИЙСКАЯ ФЕДЕРАЦИЯ</h5>
+        <div id="page_top">
+            <p class="vidanstr1">ОТДЕЛОМ ВНУТРЕННИХ ДЕЛ</p>
+            <p class="vidanstr2">ГОР. ТОЛЬЯТТИ</p>
+            <p class="vidanstrdata">31.10.2019</p>
+            <p class="vidanstrcode">630-002</p>
+            <img class="podpis" src="./images/podpis1.png">
+            <img class="podpis1" src="./images/podpis.png">
+        </div>
+
+        <div id="page_bottom">
+            <img class="passfoto" src="./images/foto.jpg">
+            <p id="hfamilia">АРХАНГЕЛЬСКИЙ</p>
+            <p id="hname">МИХАИЛ</p>
+            <p class="Hfname">СЕРГЕЕВИЧ</p>
+            <p class="hpol">МУЖ.</p>
+            <p id="hborn">22.09.2005</p>
+            <p class="hpborn1">ГОР. ТОЛЬЯТТИ</p>
+            <p class="hpborn2">САМАРСКОЙ ОБЛ.</p>
+        </div>
+
+
+    </div>
+
+
+<br>
+<br>
+
+    <button id="getInfoButton" style="background-color: #aef3c4; border-radius: 10px;"><h1>Получить информацию из DOM</h1></button>
+    <br>
+    <br>
+    <div id="output"></div>
+    <script>
+        document.getElementById('getInfoButton').onclick = function() {
+            const hfamilia = document.getElementById("hfamilia").innerText;
+            const hname = document.getElementById("hname").innerText;
+            const hborn = document.getElementById("hborn").innerText;
+    
+            document.getElementById('output').innerText = `Фамилия: ${hfamilia}, Имя: ${hname}, Год рождения: ${hborn.split(".")[2]}`;
+        }
+    </script>
+
+<a href="./images/screendom.png" target="_blank">
+  <img id="screensh" src="./images/screendom.png" title="Получение информации из DOM" width="700" height="350">
+</a>
+<br>
+<a href="#strel"><img src="./images/strelka_up.png" align="right" alt="В начало"</a>
+
+    
+</body>
+</html>

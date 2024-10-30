@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Вход</title>
+    <style>
+        html {
+  background:linear-gradient(to right,  rgb(65, 116, 211), white, red);
+  background-blend-mode:overlay;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  height:100%;
+}
+
+body {
+  background:transparent;
+}
+
+.registration-cssave{
+  padding:50px 0;
+}
+
+.registration-cssave form {
+  max-width:800px;
+  padding:50px 70px;
+  border-radius:10px;
+  box-shadow:4px 4px 15px rgba(0, 0, 0, 0.2);
+  background-color:#fff;
+}
+
+.registration-cssave form h3 {
+  font-weight:bold;
+  margin-bottom:30px;
+}
+
+.registration-cssave .item {
+  border-radius:10px;
+  margin-bottom:25px;
+  padding:10px 20px;
+}
+
+.registration-cssave .create-account {
+  border-radius:30px;
+  padding:10px 20px;
+  font-size:18px;
+  font-weight:bold;
+  background-color:#3f93ff;
+  border:none;
+  color:white;
+  margin-top:20px;
+}
+
+@media (max-width: 576px) {
+  .registration-cssave form {
+    padding:50px 20px;
+  }
+}
+
+#log {
+  margin-left: -480px;
+  margin-top: 10px;
+}
+
+</style>
+
+<head>
+    <link rel="shortcut icon" href="./images/icon.jpg"/>
+  </head>
+<body>
+    <a href="inf.html">
+        <img src="./images/logo.jpg" id="log" title="На главную" width="150" height="100" align="left" style="border-radius: 25px; position: absolute;">
+    </a>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+<div class="registration-cssave">
+    <form action="education.html">
+        <h1 class="text-center"><font face="Great Vibes">Вход</font></h1>
+        <div class="form-group">
+            <input class="form-control item" type="text" name="username" maxlength="15" minlength="4" pattern="^[a-zA-Z0-9_.-]*$" id="username" placeholder="Логин" required>
+        </div>
+        <div class="form-group">
+            <input class="form-control item" type="password" name="Пароль" minlength="6" id="password" placeholder="Пароль" required>
+        </div>
+        <div class="form-group">
+            <input class="form-control item" type="email" name="email" id="email" placeholder="Email" required>
+        </div>
+        <div class="form-group">
+            <button class="btn btn-primary btn-block create-account" type="submit"><font face="Times New Roman">Вход в аккаунт</font></button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
