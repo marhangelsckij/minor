@@ -1,1 +1,1 @@
-https://marhangelsckij.github.io/minor/inf.html
+### https://marhangelsckij.github.io/minor/inf.html
