@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <title>Решение алгоритмической задачи</title>
+    <style>
+        .h1 {
+        font-family:'Great Vibes', momospace;
+        font-size:15pt;
+        }
+
+        #obr {
+          float: right;
+        }
+
+        body {
+  margin: 0;
+  padding: 0;
+  background: #ccc;
+  
+}
+ 
+.nav ul {
+  list-style: none;
+  background-color: #c22e2e;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.nav li {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #888;
+}
+ 
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: .3s background-color;
+}
+ 
+.nav a:hover {
+  background-color: #333baf;
+}
+ 
+.nav a.active {
+  background-color: #fff;
+  color: #444;
+  cursor: default;
+}
+ 
+@media screen and (min-width: 600px) {
+  .nav li {
+    width: 300px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+  }
+ 
+  /* Option 1 - Display Inline */
+  .nav li {
+    display: inline-block;
+    margin-right: -4px;
+  }
+ 
+
+}
+
+        body {
+            background: linear-gradient(to right,  rgb(65, 116, 211), white, red);
+            width: 99%;
+            height: 100%
+        }
+
+        #bonj {
+            position: absolute;
+            left: 800px;
+            top: 650px;
+        }
+        
+.form-container {
+  max-width: 600px;
+  margin-left: 10px;
+  margin-top: 100px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 60px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+#log {
+  margin-left: 10px;
+  margin-top: -60px;
+}
+        
+    </style>
+</head>
+
+<head>
+    <link rel="shortcut icon" href="../images/icon.jpg"/>
+  </head>
+
+<body class="news">
+    <header>
+      <div class="nav">
+        <ul>
+          <li class="home"><a href="../inf.html"><font face="Fantasy">Главная</font></a></li>
+          <li class="tutorials"><a href="../teachers.html"><font face="Fantasy">Преподаватели</font></a></li>
+          <li class="about"><a href="../education.html"><font face="Fantasy">Образование</font></a></li>
+          <li class="news"><a href="../place.html"><font face="Fantasy">Местоположение</font></a></li>
+          <li class="passport"><a href="../index.html"><font face="Fantasy">Паспорт</font></a></li>
+          <li class="passport"><a href="../change_to_latin.html"><font face="Fantasy">Паспорт 2</font></a></li>
+          <li class="task"><a class="active" href="main.html"><font face="Fantasy">Задача</font></a></li>
+          <li class="task"><a href="../tasktrain2/main2.html"><font face="Fantasy">Задача 2</font></a></li>
+        </ul>
+      </div>
+    </header>
+  </body>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href='css/main.css'/>
+        <script src="js/js.js"></script>
+        <title>Плацкарт</title>
+    </head>
+    <body>
+        <div class="cont">
+            <div class="usl">
+                <p><b>Дан номер места в плацкартном вагоне.</b></p>
+                <p><i>Необходимо определить, какое это место: верхнее или нижнее, в купе или боковое.</i></p>
+            </div>
+            <div class="action">
+                <input placeholder="Введите номер вашего места", id="place">
+                <button class="search" onclick="Function()">Найти</button>
+                
+            </div>
+            <div class="otvet" id="otvet_id">
+                <p id="text">Ответ</p>
+            </div>
+        </div>
+    </body>
+</html>
