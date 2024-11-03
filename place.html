@@ -1,0 +1,251 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Club de langues. Местоположение</title>
+    <style>
+        
+        body {
+  margin: 0;
+  padding: 0;
+  background: #ccc;
+  
+}
+ 
+.nav ul {
+  list-style: none;
+  background-color: #c22e2e;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  border-bottom: 3px solid #8d0a0a;
+}
+.nav li {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #888;
+}
+ 
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: .3s background-color;
+  border-bottom: 3px solid #770d2d;
+  border-right: 3px solid #770d2d;
+}
+ 
+.nav a:hover {
+  background-color: #333baf;
+}
+ 
+.nav a.active {
+  background-color: #fff;
+  color: #444;
+  cursor: default;
+}
+ 
+@media screen and (min-width: 600px) {
+  .nav li {
+    width: 300px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+  }
+ 
+  .nav li {
+    display: inline-block;
+    margin-right: 0px;
+  }
+ 
+}
+
+        body {
+            background: linear-gradient(to right,  rgb(65, 116, 211), white, red);
+            width: 100%;
+            height: 100%
+        }
+
+        .frame {
+            border: 3px solid #acd65e;
+        }
+
+        #map {
+            position: absolute;
+            left: 950px;
+            top: 350px;
+        }
+
+        #strelka {
+          margin-top: 100px;
+        }
+
+        #pl {
+            position: absolute;
+            margin-left: 25px;
+            margin-top: 10px;
+        }
+
+        #pl1 {
+            position: absolute;
+            margin-left: 25px;
+            margin-top: 3px;
+        }
+
+        #sdf {
+          margin-left: 100px;
+        }
+
+        #sdf1 {
+          margin-left: 70px;
+        }
+        #backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 15pc;
+    display: none;
+    /* Скрываем кнопку по умолчанию */
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#backToTop:hover {
+    background-color: #753377;
+}
+
+button {
+    background-color: #57144e;
+    color: rgb(255, 255, 255);
+    padding: 10px 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 50%;
+    margin: auto;
+    margin-left: 25px;
+}
+
+button:hover {
+    background-color: #87c2e6;
+}
+        footer {
+    text-align: center;
+    padding: 1%;
+    background: #8d65bb;
+    color: #e3dddd;
+    border-top: 3px solid #512b7e;
+}    
+
+#mapggl {
+  margin-top: 350px;
+  margin-left: 750px;
+}
+#logotip {
+  float: right;
+  margin-right: 15px;
+  margin-top: 15px;
+}
+.shadow {
+  transition: box-shadow 0.3s ease;
+}
+
+.shadow:hover {
+            box-shadow: 10px 10px 20px rgba(36, 36, 36, 0.5);
+        }
+
+.frame {
+  transition: box-shadow 0.3s ease;
+}
+
+.frame:hover {
+            box-shadow: 10px 10px 20px rgba(36, 36, 36, 0.5);
+        }
+
+#cont {
+  font-size: 60px;
+  margin-top: -130px;
+  margin-left: 50px;
+}
+    </style>
+</head>
+
+<head>
+    <link rel="shortcut icon" href="./images/icon.jpg"/>
+  </head>
+<body class="news">
+    <header>
+      <div class="nav">
+        <ul>
+            <li class="home"><a href="inf.html"><font face="Fantasy">Главная</font></a></li>
+            <li class="tutorials"><a href="teachers.html"><font face="Fantasy">Преподаватели</font></a></li>
+            <li class="about"><a  href="education.html"><font face="Fantasy">Образование</font></a></li>
+            <li class="news"><a class="active" href="place.html"><font face="Fantasy">Местоположение</font></a></li>
+            <li class="passport"><a href="index.html"><font face="Fantasy">Паспорт</font></a></li>
+            <li class="passport"><a href="change_to_latin.html"><font face="Fantasy">Паспорт 2</font></a></li>
+            <li class="task"><a href="tasktrain/main.html"><font face="Fantasy">Задача</font></a></li>
+            <li class="task"><a href="tasktrain2/main2.html"><font face="Fantasy">Задача 2</font></a></li>
+          </ul>
+      </div>
+    </header>
+  </body>
+
+  <a href="inf.html">
+    <img src="./images/logo.jpg" class="shadow" id="logotip" title="На главную" width="150" height="100" align="right" style="border-radius: 25px">
+</a>
+    <p><h1 id="sdf1"><font face="Great Vibes">Удобное расположение в самом центре Нижнего Новгорода рядом с метро.</font></h1>
+    <h1 id="sdf"><font face="Great Vibes">Наш адрес: г. Нижний Новгород, ул.Новая д.34А</font></h1>
+    </p>
+<a href="#place"><img id="pl1" src="./images/place.png" alt="Расположение" width="50"></a>
+<br>
+<br>
+    <a name="place"><img id="pl" src="./images/place.png" title="Расположение" class="frame"></a>
+    <img id="map" src="./images/map.png" title="<---Мы здесь!" width="300" height="250" style="border-radius: 25px">
+<p>
+    <iframe class="shadow" id="mapggl" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1878.742395482964!2d43.99087247845623!3d56.312621888805005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4151d5b21b7ff8b1%3A0xb47ba123371042ae!2z0YPQuy4g0J3QvtCy0LDRjywgMzTQkCwg0J3QuNC20L3QuNC5INCd0L7QstCz0L7RgNC-0LQsINCd0LjQttC10LPQvtGA0L7QtNGB0LrQsNGPINC-0LHQuy4sIDYwMzAwMA!5e1!3m2!1sru!2sru!4v1730593384502!5m2!1sru!2sru" width="550" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</p>
+
+<h1><p id="cont"><font face="Great Vibes">С нетерпением ждём Вас! ↘</font></p></h1>
+
+<button id="backToTop" onclick="scrollToTop()" style="display: block;">Вернуться к началу</button>
+<script>
+  function scrollToTop() {
+      window.scrollTo({
+          top: 0,
+          behavior: 'smooth' // Прокрутка будет плавной
+      });
+  }
+
+  // Показываем кнопку, когда пользователь прокручивает вниз
+  window.onscroll = function () {
+      const button = document.getElementById('backToTop');
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+          button.style.display = 'block'; // Показываем кнопку
+      } else {
+          button.style.display = 'none'; // Скрываем кнопку
+      }
+  };
+</script>
+<footer>
+<div id="sc">
+  <link rel="stylesheet" href="stylesocial.css">
+  <div style="text-align:center;">Присоединяйтесь:</div>
+  <ul class="social-icons">
+    <li><a class="social-icon-vk" href="https://vk.com/invite/zmizWzT" title="Официальная страница Club de langues в ВКонтакте" target="_blank" rel="noopener"></a></li>
+    <li><a class="social-icon-telegram" href="https://t.me/+UUDRHYwOejY3Yzky" title="Официальная страница Club de langues в Telegram" target="_blank" rel="noopener"></a></li>
+  </ul>
+</div>
+<p>© Учите французский вместе с "Club de langues" </p>
+</footer>
+</body>
+</html>
