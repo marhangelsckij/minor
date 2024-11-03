@@ -31,6 +31,7 @@
   text-align: center;
   padding: 0;
   margin: 0;
+  border-bottom: 3px solid #8d0a0a;
 }
 .nav li {
   font-family: 'Oswald', sans-serif;
@@ -45,6 +46,8 @@
   color: #fff;
   display: block;
   transition: .3s background-color;
+  border-bottom: 3px solid #770d2d;
+  border-right: 3px solid #770d2d;
 }
  
 .nav a:hover {
@@ -69,7 +72,7 @@
   /* Option 1 - Display Inline */
   .nav li {
     display: inline-block;
-    margin-right: -4px;
+    margin-right: 0px;
   }
  
 
@@ -77,7 +80,7 @@
 
         body {
             background: linear-gradient(to right,  rgb(65, 116, 211), white, red);
-            width: 99%;
+            width: 100%;
             height: 100%
         }
 
@@ -101,6 +104,21 @@
   margin-left: 10px;
   margin-top: -60px;
 }
+.tuk {
+  transition: box-shadow 0.3s ease;
+}
+
+.tuk:hover {
+            box-shadow: 10px 10px 20px rgba(36, 36, 36, 0.5);
+        }
+
+.shadow {
+  transition: box-shadow 0.3s ease;
+}
+
+.shadow:hover {
+            box-shadow: 10px 10px 20px rgba(36, 36, 36, 0.5);
+        }
         
     </style>
 </head>
@@ -132,7 +150,8 @@
     <p name="formulation" id="strel" class="usl"><i><b>Дано. Номер места в плацкартном вагоне.</b></i>
       <br>
       <br>
-      <b>Определить, какое это место: верхнее или нижнее, в купе или боковое.</b></p>
+      <b>Определить, какое это место: верхнее или нижнее, в купе или боковое.</b>
+    </p>
     <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
         <ul class="tuk">
           <br>
@@ -151,11 +170,11 @@
               <br>
             <li><h3>Определить место:</h3>
               <br>
-              <input id="verify" type="button" value="Проверить"></li>
+              <input id="verify" class="shadow" type="button" value="Проверить"></li>
               <br>
             <li><h3>Отправить на сервер:</h3>
               <br>
-              <input id="send" type="button" value="Отправить"></li>
+              <input id="send" type="button" class="shadow" value="Отправить"></li>
             </div>
         </ul>
     </form>
