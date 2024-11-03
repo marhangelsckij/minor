@@ -91,11 +91,22 @@
             left: 800px;
             top: 550px;
         }
+        #jeveux {
+  margin-left: 750px;
+  margin-top: -120px;
+  max-width: 500;
+  max-height: 300;
+}
+
+#song {
+  margin-top: 380px;
+  margin-left: 760px;
+}
         
 .form-container {
   max-width: 600px;
   margin-left: 10px;
-  margin-top: 100px;
+  margin-top: -700px;
   padding: 20px;
   background-image: url(./images/tower.jpg);
   border-radius: 60px;
@@ -109,7 +120,7 @@
 
 #log {
   margin-left: 10px;
-  margin-top: -60px;
+  margin-top: -90px;
 }
 #backToTop {
     position: fixed;
@@ -149,17 +160,10 @@ button:hover {
 }
 
 .shadow:hover {
-            box-shadow: 10px 10px 20px rgba(36, 36, 36, 0.5);
-        }
-#jeveux {
-  margin-left: 750px;
-  margin-top: -100px;
+  box-shadow: 10px 10px 20px rgba(36, 36, 36, 0.5); 
 }
 
-#song {
-  margin-top: -290px;
-  margin-left: 760px;
-}
+
 
 footer {
     text-align: center;
@@ -219,10 +223,20 @@ footer {
 <p>
     <h1 align="center"><font face="Great Vibes">Bonjour! Клуб изучения французского для желающих всех возрастов</font></h1>
 </p>
-
+<p>
+  <h1><p id="song"><font face="Great Vibes">Песня дня</font></p></h1>
+</p>
+<br>
+<br>
+<br>
+<br>
+<p>
+  <iframe id="jeveux" width="500" height="300" src="https://www.youtube.com/embed/4p65FvMqdkY" title="ZAZ - Je veux. Транскрипция и перевод" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</p>
 <div class="form-container">
 <a name="anketa">
-    <p align="center"><br><h4>Анкета для обратного звонка по вашей заявке</h4></a>
+    <p align="center"><br><h4>Анкета для обратного звонка по вашей заявке</h4>
+</a>
 <br>
 <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
   <p><b>Введите ваши данные</b><input type="hidden"  name="q" value="search"></p>
@@ -265,17 +279,7 @@ footer {
 
 </form>
 </div>
-</p>
-<p>
-  <h1><p id="song"><font face="Great Vibes">Песня дня</font></p></h1>
-</p>
-<br>
-<br>
-<br>
-<br>
-<p>
-<iframe id="jeveux" width="500" height="300" src="https://www.youtube.com/embed/4p65FvMqdkY" title="ZAZ - Je veux. Транскрипция и перевод" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</p>
+
 <button id="backToTop" onclick="scrollToTop()" style="display: block;">Вернуться к началу</button>
 <script>
   function scrollToTop() {
@@ -295,6 +299,11 @@ footer {
       }
   };
 </script>
+<br>
+<br>
+<br>
+<br>
+<br>
 <br>
 <footer>
   <p>© Учите французский вместе с "Club de langues" </p>
