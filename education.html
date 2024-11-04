@@ -1,0 +1,391 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Club de langues. Образование</title>
+    <style>
+        
+        body {
+  margin: 0;
+  padding: 0;
+  background: #ccc;
+  
+}
+ 
+.nav ul {
+  list-style: none;
+  background-color: #c22e2e;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  border-bottom: 3px solid #8d0a0a;
+}
+.nav li {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #888;
+}
+ 
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: .3s background-color;
+  border-bottom: 3px solid #770d2d;
+  border-right: 3px solid #770d2d;
+  border-left: 3px hidden;
+}
+ 
+.nav a:hover {
+  background-color: #333baf;
+}
+ 
+.nav a.active {
+  background-color: #fff;
+  color: #444;
+  cursor: default;
+}
+ 
+@media screen and (min-width: 600px) {
+  .nav li {
+    width: 300px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+  }
+ 
+  /* Option 1 - Display Inline */
+  .nav li {
+    display: inline-block;
+    margin-right: 0px;
+  }
+ 
+  
+}
+        
+
+body {
+            background: url(images/edu.gif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            max-width: 100%;
+            max-height: 100%
+        }
+
+        .frame {
+            border: 3px solid #cc3f3f;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .frame:hover {
+            box-shadow: 10px 10px 20px rgba(36, 36, 36, 0.5);
+        }
+
+
+        table { margin-top: 100px; }
+
+        .container {
+        li { float: left; margin: 1em; }
+    li:nth-child(5n+1) { clear: both; }
+    }
+
+    #log {
+  margin-left: 10px;
+}
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 15pc;
+    display: none;
+    /* Скрываем кнопку по умолчанию */
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#backToTop:hover {
+    background-color: #753377;
+}
+
+button {
+    background-color: #57144e;
+    color: rgb(255, 255, 255);
+    padding: 10px 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 50%;
+    margin: auto;
+    margin-left: 25px;
+}
+
+button:hover {
+    background-color: #87c2e6;
+}
+.shadow {
+  transition: box-shadow 0.3s ease;
+}
+
+.shadow:hover {
+            box-shadow: 10px 10px 20px rgba(36, 36, 36, 0.5);
+        }
+        .btn-primary {
+  transition: box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+            box-shadow: 10px 10px 20px rgba(36, 36, 36, 0.5);
+        }
+
+.colomn {
+  background-color: rgba(255,255,255,0.5);
+}
+#strel {
+    background-color: #f5c5c5;
+  border-radius: 15%;
+  box-shadow: 5px 5px red;
+  font-weight: lighter;
+  max-width: 600px;
+  margin-left: 27%;
+}
+
+footer {
+    text-align: center;
+    padding: 1%;
+    background: #8d65bb;
+    color: #e3dddd;
+    margin-top: 720px;
+    border-top: 3px solid #512b7e;
+}    
+
+
+    </style>
+</head>
+
+<head>
+    <link rel="shortcut icon" href="./images/icon.jpg"/>
+  </head>
+<body class="news">
+    <header>
+      <div class="nav">
+        <ul>
+            <li class="home"><a href="inf.html"><font face="Fantasy">Главная</font></a></li>
+            <li class="tutorials"><a href="teachers.html"><font face="Fantasy">Преподаватели</font></a></li>
+            <li class="about"><a class="active" href="education.html"><font face="Fantasy">Образование</font></a></li>
+            <li class="news"><a href="place.html"><font face="Fantasy">Местоположение</font></a></li>
+            <li class="passport"><a href="index.html"><font face="Fantasy">Паспорт</font></a></li>
+            <li class="passport"><a href="change_to_latin.html"><font face="Fantasy">Паспорт 2</font></a></li>
+            <li class="task"><a href="tasktrain/main.html"><font face="Fantasy">Задача</font></a></li>
+            <li class="task"><a href="tasktrain2/main2.html"><font face="Fantasy">Задача 2</font></a></li>
+        </ul>
+      </div>
+    </header>
+  </body>
+
+<p>
+    <a href="inf.html">
+        <img src="./images/logo.jpg" class="shadow" id="log" title="На главную" width="150" height="100" align="right" style="border-radius: 25px;position: absolute;">
+    </a>
+</p>
+<br>
+<div class="wrap">
+    <button class="button" onclick="location.href='#chj'">Магазин</a>
+        <link rel="stylesheet" href="styleshop.css">
+  </div>
+<p>
+    <h1 id="strel" align="center"><font face="Fantasy">План мероприятий</font></h1>
+</p>
+
+<table class="shadow" align="center" border="3" cellpadding="10" cellspacing="5" width="600" background="./images/back.jpg">
+    <tr>
+        <th>Мероприятие</th>
+        <th>Дата проведения</th>
+        <th>Дополнительная информация</th>
+    </tr>
+    <tr>
+        <td>Noël(Рождество)
+            <br>
+            <br>
+            <a href="images/noelbig.jpg" title="Noël" target="_blank"><img src="images/noel.jpg" style="border: 2px solid #8d65bb;" title="Рождество" align="center"></a>
+        </td>
+        <td>25.12</td>
+        <td>Планируется чаепитие. Будем петь Рождественские песни. Желателен новгодний костюм</td>
+    </tr>
+    <tr>
+        <td>Просмотр мультфильма</td>
+         <td>17.03</td>
+        <td><a href="https://www.youtube.com/playlist?list=PL5u_xLu4mddkxbqtgWqBiemWHJNoF8kvh" target="_blank">Мультфильм "Le Petit Nicolas"</a></td>
+    </tr>
+    <tr>
+        <td>Pâques (Пасха)</td>
+        <td>Будет известна позже</td>
+        <td><a href="./images/easter.jpg" target="_blank">Пасха</a></td>
+    </tr>
+    <tr>
+        <td>La Toussaint (Halloween)</td>
+        <td>29.10</td>
+        <td bgcolor="orange"><img src="./images/helloween.jpg" width="300" height="200" title="La Toussaint">
+        <figcaption>Astuce ou gâterie?</figcaption>
+        </td>
+    </tr>
+
+
+</table>
+
+<div class="container"> <br><br><br>
+    <div class="card-body">
+        <h5 class="shop" style="text-align: center; font-size: 25pt;"><font face="Fantasy">Магазин</font></h5>
+        <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+            <input name="q" type="hidden" value="search">
+            <ul class="d-flex flex-row justify-content-around flex-wrap bg-light" id="node_for_insert"></ul>
+
+            <ul class="container" id="chj">
+                
+                <li style="width: 210px" class="colomn">
+                    <img src="./images/bb.jpg" title="Групповые очные занятия" width="180px" height="120px" class="frame">
+                    <h5 class="card-title">Групповые очные занятия</h5>
+                    <p class="card-text">Проводим комфортные уроки. Особенность - коммуникация не только с учителем,
+                        но и с другими учениками</p>
+                    <input type="hidden" name="vendor_code" value="111">
+                    <p class="card-text">
+                        Заказать
+                        <input class="w-25" type="number" name="amount" value="0">
+                    </p>
+                </li>
+
+                
+                <li style="width: 210px" class="colomn">
+                    <img src="./images/p1.jpg" title="Групповые онлайн занятия" width="180px" height="120px" class="frame">
+                    <h5 class="card-title">Групповые онлайн занятия</h5>
+                    <p class="card-text">Прогресс не стоит на месте. Наши занятия вы сможете посещать из любой точки
+                        мира</p>
+                    <input type="hidden" name="vendor_code" value="222">
+                    <p class="card-text">
+                        Заказать
+                        <input class="w-25" type="number" name="amount" value="0">
+                    </p>
+                </li>
+
+                <li style="width: 210px" class="colomn">
+                    <img src="./images/p2.jpg" title="Индивидуальные очные занятия" width="180px" height="120px" class="frame">
+                    <h5 class="card-title">Индивидуальные очные занятия</h5>
+                    <p class="card-text">Если Вам комфортен узкий кург людей, то этот варинат для Вас. Только Вы и
+                        Ваш преподаватель</p>
+                    <input type="hidden" name="vendor_code" value="333">
+                    <p class="card-text">
+                        Заказать
+                        <input class="w-25" type="number" name="amount" value="0">
+                    </p>
+                </li>
+
+                <li style="width: 210px" class="colomn">
+                    <img src="./images/p3.jpg" title="Индивидуальные онлайн занятия" width="180px" height="120px" class="frame">
+                    <h5 class="card-title">Индивидуальные онлайн занятия</h5>
+                    <p class="card-text">Занятия тет-а-тет из любой точки мира. Вам понадобится лишь ноутбук и
+                        стабильный Интернет</p>
+                    <input type="hidden" name="vendor_code" value="444">
+                    <p class="card-text">
+                        Заказать
+                        <input class="w-25" type="number" name="amount" value="0">
+                    </p>
+                </li>
+
+                <li style="width: 210px" class="colomn">
+                    <img src="./images/p4.jpg" title="Курсы подготовки к ЕГЭ" width="180px" height="120px" class="frame">
+                    <h5 class="card-title">Курсы подготовки к ЕГЭ</h5>
+                    <p class="card-text">Экзамен - важный этап в жизни выпускника. Мы поможем справиться с этим
+                        препятствием.</p>
+                    <input type="hidden" name="vendor_code" value="555">
+                    <p class="card-text">
+                        Заказать
+                        <input class="w-25" type="number" name="amount" value="0">
+                    </p>
+                </li>
+
+                <li style="width: 210px" class="colomn">
+                    <img src="./images/p5.jpg" title="Курсы подготовки к TCF" width="180px" height="120px" class="frame">
+                    <h5 class="card-title">Курсы подготовки к TCF</h5>
+                    <p class="card-text">Международный экзамен проверяет уровень вашего языка. Мы поможем вам в
+                        достижении цели, ради которой вы сдаете тест </p>
+                    <input type="hidden" name="vendor_code" value="666">
+                    <p class="card-text">
+                        Заказать
+                        <input class="w-25" type="number" name="amount" value="0">
+                    </p>
+                </li>
+
+                <li style="width: 210px" class="colomn">
+                    <img src="./images/p6.jpg" title="Новый год вместе" width="180px" height="120px" class="frame">
+                    <h5 class="card-title">Новый Год вместе</h5>
+                    <p class="card-text">Проведение тематического вечера по случаю празднования Нового Года. Обещаем - скучать не придётся!</p>
+                    <input type="hidden" name="vendor_code" value="777">
+                   <p class="card-text">
+                       Заказать
+                       <input class="w-25" type="number" name="amount" value="0">
+                   </p> 
+                   </li>
+
+                   <li style="width: 210px" class="colomn">
+                    <img src="./images/p7.jpg" title="Гайд" width="180px" height="120px" class="frame">
+                    <h5 class="card-title">Гайд</h5>
+                    <p class="card-text">Гайд, который будет полезен Вам при изучении французского (в соответствии с международными стандартами)</p>
+                    <input type="hidden" name="vendor_code" value="888">
+                    <p class="card-text">
+                        Заказать
+                        <input class="w-25" type="number" name="amount" value="0">
+                    </p>
+                </li>
+
+                <li style="width: 210px" class="colomn">
+                    <img src="./images/p8.jpg" title="Два языка" width="180px" height="120px" class="frame">
+                    <h5 class="card-title">Два языка</h5>
+                    <p class="card-text">Для полиглотов! Если Вы изучаете параллельно два и более языка, то мы делаем вам приятную скидку на все категории</p>
+                    <input type="hidden" name="vendor_code" value="999">
+                    <p class="card-text">
+                        Заказать
+                        <input class="w-25" type="number" name="amount" value="0">
+                    </p>
+                </li>
+            </ul>
+            <input class="btn-primary" style="background-color: #aef3c4; border-radius: 10px;" type="Submit" value="В корзину">
+        </form>
+    </div>
+
+</div>
+<script src="../css/js/item.js"></script>
+
+<button id="backToTop" onclick="scrollToTop()" style="display: block;">Вернуться к началу</button>
+<script>
+  function scrollToTop() {
+      window.scrollTo({
+          top: 0,
+          behavior: 'smooth' // Прокрутка будет плавной
+      });
+  }
+
+  // Показываем кнопку, когда пользователь прокручивает вниз
+  window.onscroll = function () {
+      const button = document.getElementById('backToTop');
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+          button.style.display = 'block'; // Показываем кнопку
+      } else {
+          button.style.display = 'none'; // Скрываем кнопку
+      }
+  };
+</script>
+<footer>
+  <p>© Учите французский вместе с "Club de langues" </p>
+</footer>
+
+</body>
+</html>
