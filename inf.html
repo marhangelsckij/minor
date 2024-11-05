@@ -80,14 +80,20 @@
 
 }
 
-        body {
-            background: url(images/5901.gif);
-            background-repeat: no-repeat;
-            background-size: cover;
-            max-width: 100%;
-            max-height: 100%
-        }
+body {
+            background: url(images/5902.mp4);
+            position: relative;
+background-size: cover;
 
+        }
+#videooo {
+  position: fixed;
+left: 0;
+top: 0;
+min-width: 100%;
+min-height: 100%;
+z-index: -1;
+}
         #bonj {
             position: absolute;
             left: 800px;
@@ -99,10 +105,34 @@
   max-width: 500;
   max-height: 300;
 }
+#los {
+  background-color: rgba(255,255,255,0.5);
+}
+
+
+#club {
+  margin-left: 400px;
+  margin-top: 10px;
+  background-color: #f5c5c5;
+  border-radius: 15%;
+  box-shadow: 5px 5px red;
+  font-weight: lighter;
+  max-width: 600px;
+}
 
 #song {
   margin-top: 380px;
   margin-left: 760px;
+  background-color: rgba(255,255,255,0.7);
+  border-radius: 7%;
+  max-width: 120px;
+}
+
+#rene {
+  background-image: linear-gradient(to right, blue, white, red);
+  max-width: 300px;
+  border-radius: 15%;
+  box-shadow: 5px 5px lightcoral;
 }
         
 .form-container {
@@ -199,6 +229,8 @@ footer {
       </div>
     </header>
   </body>
+  <video id="videooo" src="images/5902.mp4" autoplay loop muted playsinline style="pointer-events: none;"></video>
+
 <p align="right" style="font-size: 10pt">
     <a id="obr" href="#anketa"><h2><font face="Great Vibes">Обратная связь</font></h2></a>
 </p>
@@ -216,17 +248,18 @@ footer {
     <img src="./images/logo.jpg" class="shadow" id="log" title="На главную" width="150" height="100" align="left" style="border-radius: 25px; position: absolute;">
 </a>
 
-<p id="strel"><big><h1 align="center"><font face="Fantasy">Club de langues</font></h1></big></p>
+<p id="strel"><big><h1 id="club" align="center"><font face="Fantasy">Club de langues</font></h1></big></p>
 <p>
-<div class="h1" align="right"><strong><font face="Great Vibes"><h2>"Je pense, donc je suis"
+<div class="h1" align="right"><strong><font face="Great Vibes"><h2 id="rene">"Je pense, donc je suis"
     <p>René Descartes</h2></p></font>
 </strong></div>
 </p>
 <p>
-    <h1 align="center"><font face="Great Vibes">Bonjour! Клуб изучения французского для желающих всех возрастов</font></h1>
+    <h1 id="los" align="center"><font face="Great Vibes"><marquee scrollamount="10">Bonjour! Клуб изучения французского для желающих всех возрастов</marquee></font></h1>
 </p>
+
 <p>
-  <h1><p id="song"><font face="Great Vibes" color="white">Песня дня</font></p></h1>
+  <h1><p id="song"><font face="Great Vibes">Песня дня</font></p></h1>
 </p>
 <br>
 <br>
